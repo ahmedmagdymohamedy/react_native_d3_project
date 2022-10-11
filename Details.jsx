@@ -3,23 +3,15 @@ import { styles } from "./styles.jsx";
 export const Details = ({ navigation }) => {
   return (
     <View>
-      <Text>Details PAGE WORKED</Text>
+      <Text>Details PAGE</Text>
 
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => {
-          navigator.navigate("Home");
-        }}
-      >
-        <Text>Go To Home</Text>
-      </TouchableOpacity>
       <TouchableOpacity
         style={styles.button}
         onPress={() => {
           navigation.navigate("Camera");
         }}
       >
-        <Text>Go To Camera</Text>
+        <Text>Open Camera</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.button}
@@ -27,7 +19,7 @@ export const Details = ({ navigation }) => {
           navigation.navigate("ImgPicker");
         }}
       >
-        <Text>Pick Image</Text>
+        <Text>Pick image</Text>
       </TouchableOpacity>
     </View>
   );
